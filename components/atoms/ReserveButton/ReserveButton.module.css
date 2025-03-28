@@ -1,0 +1,10 @@
+.cartButton{
+    width:204px;
+    height:56px;
+    border: none;
+    border-radius: 10px;
+    font-size:24px;
+    font-weight: 400px;
+    color: #FFFFFF;
+    background-color:#28A745;
+}

@@ -1,0 +1,45 @@
+.container {
+    width:872px ;
+    height: 171px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+   
+ }
+ .container div{
+    display: flex;
+    
+ }
+ .container .personal{
+    display: flex;
+ }
+ .container  h5{
+    color: #000000;
+    font-size:16px;
+    font-weight:400;
+    margin: 12px;
+    /* margin-bottom: 0; */
+
+}
+.container .edit{
+   margin: 16px 620px 8px 16px;
+}
+.container .edit a{
+    color: #009ECA;
+    font-size:14px ;
+    font-weight:400 ;
+    margin-right: 5px;
+}
+.container .first{
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+    margin:6px 12px 24px 0px;
+}
+.container .second{
+    font-size: 14px;
+    font-weight: 600;
+    color: #282828;
+   margin: 6px 40px 24px 156px;
+}

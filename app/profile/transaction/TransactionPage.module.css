@@ -1,0 +1,51 @@
+.container{
+    width:872px;
+    height:fit-content;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    margin:-150px 322px;
+    position: relative;
+  
+}
+.table{
+    display: inline-block;
+    padding: 15px;
+    border-collapse: collapse;
+    
+    
+}
+.table thead{
+    width: 871px;
+    height: 51px;
+    background:#F3F3F3;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+   left: 1px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.table thead tr th{
+    
+    font-size: 16px;
+    font-weight: 400;
+   
+    color: #000000;
+    margin: 20px 15px 15px 100px;
+    display: inline-block;
+   
+}
+.table tbody {
+    /* margin: 40px 15px 21px 82px; */
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.table tbody tr td{
+    font-size:14px ;
+    font-weight: 300;
+    color: #000000;
+    padding: 15px 15px 15px 77px;
+ display: inline-block;
+
+}

@@ -1,0 +1,284 @@
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+/* .container img{
+    width: 1440px;
+    width: 350px;
+} */
+ 
+.sub{
+    margin: 84px 124px 11px 0;
+    width: 1120px;
+}
+.sub h2{
+    font-size: 32px;
+    font-weight: 400;
+    color:#000000;
+ /* margin-bottom: 11px; */
+}
+.subContainer{
+    display: flex;
+   
+    flex-wrap: wrap;
+    
+}
+.label{
+    text-align: center;
+  
+    color: #595959;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 auto;
+
+}
+.line{
+    width:1440px;
+    border: 1px solid #00000033
+}
+.label span{
+    color: #28A745;
+}
+.phoneCall{
+    width: 1118px;
+    height: 251px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    margin:109px 126px 0px 126px;
+    position: relative;
+}
+.professional{
+    width: 870px;
+    height: 251px;
+
+border-radius: 10px;
+background:#28A745;
+
+}
+.professional h2{
+  
+    font-size:32px;
+    font-weight:400;
+    color: #ffffff;
+    padding: 36px 57px 0px 0px;
+}
+.professional span{
+    color:#10411B;
+    
+}
+.professional p{
+
+    font-weight: 400;
+    font-size: 32px;
+    color: #ffffff;
+    padding: 8px 57px;
+}
+.professional img{
+    position: absolute;
+    left:320px;
+    bottom: 0px;
+}
+.tell{
+    position: absolute;
+    left: 40px;
+    top: 90px;
+}
+.tell .tellImage{
+    margin-top: -10px;
+    margin-right: 5px;
+}
+.tell p{
+ 
+    font-weight: 700;
+    font-size: 28px;
+    color:#000000;
+    
+}
+.tell a{
+    width:175px;
+    height: 41px;
+    border-radius: 9px;
+    background-color:#10411B;
+    padding: 8px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    margin-top: 12px;
+}
+.tell div{
+    display: flex;
+    align-items: center;
+}
+.why__torino{
+    width:1182px;
+    height: 676px;
+   /* padding: 102px 129px; */
+   display: flex;
+   /* justify-content: space-between; */
+   align-items: center;
+   margin: 102px 129px 0px 129px;
+   
+}
+.why__torino div{
+    margin-left: 180px;
+}
+.why__torino p{
+font-family: 'Vazir FD-WOL';
+  width: 400px;
+  text-align: justify;
+  line-height: 35px;
+  font-size: 20px;
+  color: #282828;
+}
+.why__torino h6{
+    font-family: 'Vazir FD-WOL';
+    margin-top: 32px;
+    color:#282828;
+    font-size: 26px;
+    font-weight: 500;
+    width: 289px;
+    height: 41px;
+}
+.why__torino h3 span{
+    color:#28A745;
+}
+.why__torino h3{
+    font-family: 'Vazir FD-WOL';
+    font-size:36px;
+    font-weight:800;
+    word-spacing: 12px;
+}
+.about__torino{
+    display: flex;
+    justify-content: space-around;
+}
+.torino_section{
+    display: flex;
+    align-items: center;
+    width: 331px;
+    height: 109px;
+}
+.torino_section h3{
+    font-family: "Vazir FD-WOL";
+    color: #282828;
+    font-weight: 500;
+    font-size: 26px;
+    margin: 4px 8px;
+}
+.torino_section p{
+    font-family: "Vazir FD-WOL";
+    color: #282828;
+    font-weight: 300;
+    font-size: 16px;
+    height: 50px;
+    margin: 4px 8px;
+    line-height: 25px;
+}
+@media(max-width:768px){
+    .container{
+        width: 400px;
+        height: auto;
+    }
+    .about__torino{
+        display: flex;
+        flex-direction: column;
+    }
+    .torino_section{
+        width: 312.27px;
+        height: 66px;
+        margin: 43px 48.73px 39px 29px;
+    }
+    .line{
+        width: 328px;
+        margin:0px 31px 0px 31px ;
+    }
+    .why__torino{
+        width:334px;
+        height:386px;
+        margin: 90px 31px 60px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .why__torino h6{
+        display: none;
+    }
+    .why__torino p{
+        display: none;
+    }
+    
+    .imageSlider{
+        display: block;
+        margin-top: 0px;
+    }
+    .phoneCall{
+        width:327px;
+        height: 190px;
+        margin: 92px 31px 0px 31px;
+        border: 1px solid #00000040;
+        display: flex;
+      
+    }
+    .professional img{
+        width:195px;
+        height:158px;
+        top: -32px;
+        left: 21px;
+    }
+    .professional h2{
+        width: 170px;
+        font-size: 22px;
+        font-weight: 800;
+        padding: 0px;
+    }
+    .professional p{
+        width: 236px;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0;
+    }
+    .tell div{
+       
+        top: 140px;
+    }
+    .tell{
+        width: 100%;
+        display: flex;
+        margin: 12px 28px;
+        top: 175px;
+        left: -50px;
+       
+    }
+    .tell p{
+        width:124px;
+        height: 38px;
+ 
+    }
+    .tell a{
+        width: 136px;
+        height: 38px;
+    }
+    .subContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .baner {
+        width:390px;
+        height:119px;
+    
+     }
+     .baner{
+        display: inline-block;
+        background-size: cover;
+        background-position:center ;
+        background-repeat:no-repeat ;
+     }
+     .label{
+        width: 333px;
+        height: 25px;
+        margin: 24px 29px 25px 28px;
+        font-size: 16px;
+        font-weight: 600;
+     }
+}

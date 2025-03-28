@@ -1,0 +1,76 @@
+.container{
+    /* padding: 59px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container span{
+    position: absolute;
+    top:15px;
+    left: 22px;
+    width: 24px;
+    height: 24px;
+}
+.title{
+    font-weight: 600;
+    font-size: 28px;
+    color: #282828;
+    text-align: center;
+    margin-top: 59px;
+}
+.container label{
+    display: inline-block;
+   font-size:16px;
+   font-weight: 300;
+   color: #000000;
+   margin-right: 30px;
+   text-align: left;
+   margin-top: 36px;
+}
+.container input{
+    border: 1px solid #00000040;
+    width:400px;
+    height: 54px ;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 10px 30px 25px 41px;
+}
+.container .sendButton{
+    width: 400px;
+    height: 54px;
+    color: #ffffff;
+   
+    font-weight:500 ;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color:#28A745 ;
+    margin: 0px 30px 40px 40px;
+    /* margin-top: 41px; */
+     border: none; 
+      padding: 8px;
+}
+.container button{
+    width: 400px;
+    height: 54px;
+    color: #ffffff;
+    background-color:#28A745 ;
+    font-weight:500 ;
+    font-size: 18px;
+    border-radius: 6px;
+    margin: 0px 30px 40px 40px;
+    border: none;
+    /* padding: 8px; */
+}
+@media(max-width:768px){
+    .container input{
+       width: 278px;
+       height: 54px;
+    }
+    .container label{
+       margin: 45px 40px 10px;
+    }
+    .container button{
+        width:278px;
+        height:54px;
+    }
+}

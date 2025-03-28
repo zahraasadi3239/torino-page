@@ -1,0 +1,144 @@
+
+.footer{
+    width: 1440px;
+    height: 302px;
+    /* border: 1px solid #00000033; */
+    margin-bottom: 12px; 
+   
+     padding: 21px 126px 21px 123px;
+}
+
+.line{
+    width: 1188px;
+   border:1px solid #00000033;
+display: flex;
+align-items: center;
+justify-content: center;
+  margin-top: 30px;
+ 
+}
+.footer_side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+display: flex;
+}
+.list ul{
+    list-style: none;
+}
+.list li{
+    margin-bottom: 8px;
+}
+.list h4{
+  
+    font-size:24px;
+    font-weight:600;
+    color:#282828;
+    margin: 21px 0 24px 144px;
+}
+.list li a{
+  
+    font-size: 18px;
+    font-weight: 400;
+    color: #282828;
+}
+.list p{
+   
+    font-weight: 400;
+    color: #282828;
+    
+}
+.list_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+}
+.torino img{
+    margin-top: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.list_left p{
+  
+    font-weight: 400;
+    font-size: 15px;
+    color:#000000;
+    margin-top: 20px;
+  word-spacing: 4px;
+   /* margin-left: 40px; */
+   padding: 5px;
+}
+.license img{
+    margin: 36px 12px 12px 28px;
+}
+.content{
+    text-align: center;
+  
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 0px;
+}
+.line1{
+    width: 1440px;
+    border: 1px solid #00000033
+}
+@media(max-width:768px){
+  .footer{
+    width: auto;
+    height: auto;
+    padding: 24px 51px 16px 31px;
+    display: flex;
+  }
+  .line{
+    width:328px;
+    border: 1px dashed #00000040;
+    margin-right:31px;
+    margin-left:31px;
+  }
+  
+  .footer_side{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .list_left{
+    display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   margin: 37px 0px 8px 0px;
+   
+  }
+  .license{
+    width: 250px;
+    height: 200px;
+  margin-right: -85px;
+    border: 1px solid #0000;
+  }
+  .license img{
+    width: 35px;
+    height: 36px;
+  
+  }
+  .list_left .torino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+    margin-right: -20px;
+  
+    
+  }
+  .torino img{
+    width:100px;
+    height: 30px;
+  }
+}

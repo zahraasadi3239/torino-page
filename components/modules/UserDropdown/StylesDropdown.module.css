@@ -1,0 +1,66 @@
+.container{
+    position: absolute;
+    width: 256px;
+    height: 151px;
+    border: 1px solid #0000001F;
+    border-radius: 11px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px; */
+    top:90px;
+    left: 140px;
+    background-color: #ffff;
+    color: #000;
+ 
+}
+.dropdownContent{
+    display: flex;
+  
+    align-items: center;
+    width: 246px;
+    height: 44px;
+    padding:12px ;
+}
+.line{
+    border: 1px solid #0000001F
+}
+
+.mobileNumber{
+    width: 254px;
+    height: 46px;
+    background: #F4F4F4;
+    /* clip-path: inset(0 0 0 0 round 10px); */
+    border-radius: 10px 10px 0 0; 
+    
+}
+.dropdownContentLink a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #282828;
+    margin-right: 8px;
+
+}
+.mobileNumber image{
+    border-radius: 50%;
+    background: #696969;
+
+
+}
+.mobileNumber button{
+  
+    font-size: 16px;
+    font-weight: 500;
+    color:#10411B;
+    background-color: none;
+    margin-right: 8px;
+    margin-top: 5px;
+
+}
+.logout button{
+    font-size: 14px;
+    font-weight: 400;
+    color:#D40000;
+    margin-right: 8px;
+    background-color: #ffff;
+}

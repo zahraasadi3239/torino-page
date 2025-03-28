@@ -1,0 +1,44 @@
+.container {
+    width:872px ;
+    height: 115px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    margin-bottom: 24px;
+ 
+    
+ }
+ .container  h5{
+    color: #000000;
+    font-size:16px;
+    font-weight:400;
+    margin: 12px;
+
+}
+.container div{
+    display: flex;
+    /* justify-content: space-around;
+   */
+}
+.container .first{
+    /* font-family: "Yekan"; */
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    margin: 12px 32px 28px 32px;
+
+}
+.container .second{
+    font-weight:400;
+    font-size:14px;
+   color:#282828;
+   margin: 12px 0px 28px 158px;
+}
+.container .edit{
+    color:#009ECA;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 12px 1px 28px 57px;
+}
+.container img{
+    margin: 12px 0px 28px 1px;
+}

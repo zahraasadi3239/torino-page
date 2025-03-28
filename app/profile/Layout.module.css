@@ -1,0 +1,36 @@
+.continer{
+    width: 284px;
+    height: 170px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    margin: 36px 126px 384px 32px;
+}
+.continer li{
+    list-style: none;
+    padding: 12px 12px 8px;
+    display: flex;
+}
+.continer li img{
+    margin-left: 8px;
+}
+.continer .profile{
+    width:284px;
+    height: 59px;
+  
+     
+
+}
+.continer .line{
+    width: 258px;
+    border: 1px solid #00000033;
+    margin: 0px auto;
+
+}
+.active{
+    width: inherit;
+    height: inherit;
+    background: #28A74540;
+    color:#28A745;
+   /* border-radius: 10px; */
+   /* border-radius: 10px 10px 0 0;  */
+}

@@ -1,0 +1,85 @@
+.container{
+    width: 872px;
+    height: 230px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    /* margin-bottom: 9px; */
+    margin-top: 24px;
+    margin-bottom:19px;
+  
+}
+.container h5{
+    font-size:16px;
+    font-weight: 400;
+    color:#000000;
+    margin: 12px;
+    margin-bottom: 0;
+}
+.container form div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container input{
+    width: 140px;
+    height: 35px;
+    margin: 10px 8px 20px 28px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color:#00000080;
+    
+}
+.container select{
+    width: 255px;
+    height: 45px;
+    margin: 20px 8px 20px 28px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color:#00000080;
+}
+.line{
+    width: 870px;
+    border: 1px solid #00000033;
+    margin-top: 2px;
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container form button{
+    align-items: end;
+    width: 144px;
+    height: 41px;
+    background: #28A745;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+   color: #FFFFFF;
+    margin: 4px 541px 8px 0px;
+
+}
+.container .button .cansel{
+    margin-right: 10px;
+    border: 2px solid #28A745;
+    color:#28A745;
+    background: #ffffff;
+}
+.error{
+    display: flex;
+    justify-content: right;
+   
+}
+.errorInput{
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    margin-top: 20px;
+    margin-left: 2px;
+}

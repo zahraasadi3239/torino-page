@@ -1,0 +1,129 @@
+.container{
+    width:832px;
+    height:168px;
+    border: 1px solid #00000033;
+    margin: 13px 20px 16px 20px;
+    border-radius: 10px;
+   position: relative;
+    transition: transform 0.3s ease;
+}
+
+.title__fleetVehicle{
+    display: flex;
+}
+  
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  .image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .details {
+    padding: 16px;
+  }
+  
+  .title{
+    display: flex;
+    align-items: center;
+  }
+  .title h3{
+    font-size: 14px;
+    font-weight: 400;
+    color:#000000;
+    margin-left:16px;
+  }
+  
+  .info{
+    display: flex;
+    margin: 23px 8px 0px 42px;
+  }
+  .info p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 6px;
+  }
+  .info span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #00000099;
+    margin-right: 3px;
+   margin-left: 42px;
+
+  }
+  
+  .date {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 6px;
+  }
+  .line{
+    width: 830px;
+    border: 1px solid #00000033;
+    margin: 20px 0px 20px 0px;
+    position: absolute;
+    left:0;
+  }
+  .price {
+  display: flex;
+  margin-top: 30px;
+  }
+  .price p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #00000080;
+
+  }
+  .price span{
+    font-size: 14px;
+    font-weight: 500;
+    color:#282828;
+  }
+  .tourId{
+    margin-left: 22px;
+  }
+  .tourPrice{
+    margin-right: 22px;
+  }
+
+  
+  .vehicle {
+    font-size: 14px;
+    font-weight: 400;
+    color:#000000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    margin-right: 155px;
+  }
+  
+  .vehicle::before {
+    content: "🚗";
+    font-size: 18px;
+  }
+  
+  .seats {
+    font-size: 12px;
+    color: #6a0572;
+    margin-bottom: 6px;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .option {
+    background: #457b9d;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }

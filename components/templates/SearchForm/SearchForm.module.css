@@ -1,0 +1,233 @@
+.container{
+    width:874px ;
+    height: 71px;
+    border: 1px solid #00000026;
+    border-radius: 20px;
+    margin: 28px 288px 84px 278px;
+    padding: 10px;
+}
+.container form{
+  display: flex;
+  align-items: center;
+}
+.container select{
+  width: 81px;
+  height: 39px;
+  border: none;
+  appearance: none; /* برای اکثر مرورگرها */
+  -webkit-appearance: none; /* برای Safari و Chrome */
+  -moz-appearance: none; /* برای Firefox */
+  font-size:20px;
+  font-weight: 400;
+  color: #2C2C2C;
+  margin-right: 2px;
+ 
+}
+.container select option{
+  padding: 12px;
+  margin: 12px;
+}
+.option{
+ width:218px;
+ height:251px;
+}
+.container .data{
+  border: none;
+  display: flex;
+  
+}
+.location .global .data{
+  display: flex;
+  align-items: center;
+}
+.container .dateText{
+  font-size:20px;
+  font-weight: 400;
+  color: #2C2C2C;
+  margin-right: 2px;
+}
+.container 
+.container .data :focus{
+border: none;
+}
+.container .dataControl{
+  border: none;
+}
+.container form button{
+    width: 190px;
+    height: 51px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color:#28A745;
+    border: none;
+    text-align: center;
+    border-radius: 16px;
+    padding: 8px;
+    margin-right:247px;
+    margin-top: -10px;
+}
+.custom-header {
+    background-color: #2ea44f;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .custom-datepicker {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Vazirmatn", sans-serif;
+  }
+  
+  .custom-datepicker .zaman-calendar {
+    background-color: white;
+    border-radius: 12px;
+  }
+  
+  .custom-datepicker .zaman-day {
+    color: #2ea44f;
+    font-weight: bold;
+  }
+  
+  .custom-datepicker .zaman-selected-day {
+    background-color: #2ea44f;
+    color: white;
+    border-radius: 50%;
+  }
+  .selectWrapper {
+    width:874px ;
+    height: 71px;
+    /* border: 1px solid #00000026; */
+    border-radius: 20px;
+    margin: 28px 288px 84px 278px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* background: white; */
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .selectBox {
+    
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .icon {
+    color: gray;
+  }
+
+  .customDatePicker {
+    border: none !important;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    
+}
+
+
+.customDatePicker input {
+    border: none !important;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    color: #00000026;
+}
+
+.customDatePicker input::placeholder {
+    /* color: black; اگر نیاز به نمایش متن پیش‌فرض "تاریخ" باشد */
+}
+
+/* .customDatePicker .rmdp-container {
+    box-shadow: none !important;
+} */
+.line{
+  height: 56px;
+  border: 1px solid #00000033;
+ margin-right: 50px;
+ margin-left: 8px;
+}
+.customDatePicker DatePicker span{
+  color: #00000033;
+  background-color: transparent;
+}
+.data {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+ /* .dateWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+   background: #fff; 
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  cursor: pointer; 
+  background: transparent;
+ }
+
+.dateText {
+  font-size: 16px;
+  color: #333;
+} */
+
+.datePickerContainer {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 100;
+  background: #fff;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  border-radius: 8px;
+  padding: 10px;
+}
+.dateWrapper {
+  cursor: pointer;
+  padding: 8px;
+  border: none; 
+  background: transparent; 
+}
+ .SearchForm_datePickerContainer__v5JSA input {
+  display: none !important;
+  border: none;
+}
+@media(max-width:768px){
+  .container{
+    width: 400px;
+    margin: 25px 31px 48px 31px;
+   
+  }
+  .container select{
+    width:43px ;
+    height:39px ;
+  }
+  
+  .container form button{
+  
+    width: 81px;
+    height: 39px;
+   font-size: 14px;
+    margin-right: 50px;
+    margin-top: -10px;
+  }
+  .line{
+    display: none;
+  }
+}

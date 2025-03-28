@@ -1,0 +1,78 @@
+.container{
+    width: 872px;
+    height:115px ;
+    border-radius: 10px;
+    border: 1px solid #00000033
+}
+.container h5{
+    font-size:16px;
+    font-weight: 400;
+    color:#000000;
+    margin: 12px;
+    margin-bottom: 0;
+}
+.container .account{
+    display: flex;
+}
+.container .mobile{
+    display: flex;
+    margin: 20px 12px 28px 0px;
+}
+
+.container .first{
+font-size: 14px;
+font-weight: 300;
+color: #000000;
+
+}
+.container .second{
+font-size: 14px;
+font-weight: 400px;
+color: #282828;
+margin-right: 12px;
+
+}
+.container input{
+    width: 255px;
+    height: 45px;
+    margin: 10px 258px 21px 0px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color:#00000080;
+    
+}
+.container form{
+    display: flex;
+}
+.container form button{
+    align-items: end;
+    width: 144px;
+    height: 41px;
+    background: #28A745;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+   color: #FFFFFF;
+    margin: 10px 10px 21px 26px;
+
+}
+.error{
+    display: flex;
+    flex-direction: column;
+   position: relative;
+   
+}
+.errorInput{
+    position: absolute;
+    left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    margin-top: 20px;
+    margin-left: 2px;
+}

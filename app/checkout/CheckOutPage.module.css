@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+  margin: 36px 126px 298px 126px;
+}
+.traveler{
+    width:865px;
+    height:228px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+.travelerr{
+    display: flex;
+    margin: 20px 20px 0px 0;
+}
+.traveler form div{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+ 
+}
+.traveler form input{
+    width: 261px;
+    height: 51px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #00000080;
+
+    
+}
+.container .details{
+    width: 307px;
+    height: 228px; 
+    border-radius: 10px;
+    border: 1px solid #00000033;
+    background: #FFFFFF;
+    margin-right: 16px;
+}
+.line{
+    width: 307px;
+    border: 1px dashed #00000080;
+
+}
+.description{
+    display: flex;
+}
+.description .title{
+    font-size:24px;
+    font-weight:600;
+    color: #000000;
+    margin: 16px 12px 24px 95px;
+}
+.description .duration{
+    font-size: 16px;
+    font-weight: 400;
+    color:#282828 ;
+    margin: 23px 0px 30px 12px;
+}
+.price{
+    display: flex;
+}
+.endPrice{
+    font-size: 16px;
+    font-weight: 400;
+    color: #282828;
+    margin: 29px 12px 0px 31px;
+
+}
+.price span{
+    font-size: 28px;
+    font-weight: 500;
+    color: #009ECA;
+}
+.price p{
+    font-size: 400;
+    font-weight: 14px;
+    color: #000000;
+    margin-right: 5px;
+}
+.priceDetails{
+    margin: 21px 0px 0px 12px;
+    padding: 2px;
+}
+.details button{
+    width:283px;
+    height:56px;
+    font-size:24px;
+    font-weight:400;
+    color:#FFFFFF ;
+    background: #28A745;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px 12px 12px 12px;
+    border: none;
+
+}
+.inputGroup {
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    /* gap: 12px; */
+    flex-wrap: wrap;
+  }
+  
+  .input {
+    width:262px;
+    height: 50px;
+    padding: 10px 12px;
+    border: 1px solid #00000080;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 14px 23.35px 24px 16px ;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+  }
+  
+  .button {
+    background: #28a745;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #218838;
+  }
