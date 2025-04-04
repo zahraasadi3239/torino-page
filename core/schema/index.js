@@ -1,4 +1,4 @@
-import { excludeDefaultMomentLocales } from "@/next.config";
+import { excludeDefaultMomentLocales } from "@/next.config.mjs";
 import { object, string } from "yup";
 
 export const UserAccountSchema = object({

@@ -40,7 +40,7 @@ function BankAccountForm() {
     <div className={styles.container}>
       <h5>اطلاعات حساب بانکی</h5>
       <form onSubmit={handleSubmit(submitHandler)}>
-        <div>
+        <div className={styles.form}>
           <div className={styles.error}>
             <input {...register("shaba_code")} placeholder="شماره شبا" />
             {!!errors?.shaba_code && (

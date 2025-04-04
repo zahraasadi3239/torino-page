@@ -19,9 +19,7 @@ function ProfileLayout({ children }) {
           <ul>
             <li
               onClick={() => handleClick(0)}
-              className={`${styles.profile} ${
-                active === 0 ? styles.active : ""
-              }`}
+              className={`${active === 0 ? styles.active : ""}`}
             >
               <Image
                 src="/images/frame.png"
@@ -60,7 +58,8 @@ function ProfileLayout({ children }) {
             </li>
           </ul>
 
-          {children}
+          <div className={styles.bigLine}></div>
+          <div className={styles.child}>{children}</div>
         </div>
       </AuthProvider>
     </div>

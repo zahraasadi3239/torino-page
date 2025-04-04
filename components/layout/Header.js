@@ -121,6 +121,12 @@ function Header() {
         <div className={styles.sign}>
           {data?.data ? (
             <div className={styles.dropdownWrapper}>
+              <Image
+                src="/images/frame.png"
+                alt="torino"
+                width={24}
+                height={24}
+              />
               <Link href="/profile" className={styles.mobileNumber}>
                 {data?.data.mobile}
               </Link>

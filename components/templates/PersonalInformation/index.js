@@ -13,19 +13,19 @@ function PersonalInformation({ data }) {
         </div>
       </div>
       <div className={styles.personal}>
-        <div className={styles.lastfirstName}>
+        <div className={`${styles.lastfirstName} ${styles.row}`}>
           <p className={styles.first}>نام</p>
           <p className={styles.second}>
             {data?.data?.data?.firstName ? data?.data?.data?.firstName : "-"}
           </p>
         </div>
-        <div className={styles.lastfirstName}>
+        <div className={`${styles.lastfirstName} ${styles.row}`}>
           <p className={styles.first}> نام خانوادگی</p>
           <p className={styles.second}>
             {data?.data?.data?.firstName ? data?.data?.data?.lastName : "-"}
           </p>
         </div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>کدملی</p>
           <p className={styles.second}>
             {data?.data?.data?.nationalCode
@@ -35,13 +35,13 @@ function PersonalInformation({ data }) {
         </div>
       </div>
       <div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>جنسیت</p>
           <p className={styles.second}>
             {data?.data?.data?.gender ? data?.data?.data?.gender : "-"}
           </p>
         </div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>تاریخ تولد</p>
           <p className={styles.second}>
             {data?.data?.data?.birthDate ? data?.data?.data?.birthDate : "-"}

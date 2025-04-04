@@ -1,5 +1,18 @@
 .container{
+   max-width:1440px;
+   width: 100%;
     margin:-150px 322px;
+    border: 5px solid #0000;
+    flex-shrink: 1;
 }
-
+@media (max-width:768px) {
+    .container{
+       min-width:400px;
+       height: 100%;
+    /* height: fit-content; */
+       /* display: flex;
+       flex-direction: column; */
+       margin: 17px -31px 10px 30px;
+    }
+}
 

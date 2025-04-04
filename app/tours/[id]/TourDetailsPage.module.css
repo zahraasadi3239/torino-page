@@ -18,6 +18,11 @@
     display: flex;
   
 }
+.container .rowLeft h2{
+    font-size:24px ;
+    font-weight: 700;
+    color: #000000;
+}
 .container .description div{
     display: flex;
     align-items: center;
@@ -97,4 +102,67 @@ margin-right: 342px;
     font-size:20px;
     font-weight:400;
     color:#000000 ;
+}
+@media(max-width:768px){
+    .container{
+        max-width: 400px;
+        height: auto;
+        margin: 23px 0px 54px 31px;
+        border: none;
+    }
+    .container .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .rowImage{
+        width:330px;
+        height: 220px;
+    }
+    .container .rowmobile{
+        display: flex;
+        align-items: center;
+    }
+    .container .rowmobile p{
+        margin: 23px 78px 0px 30px;
+    }
+    .container .rowmobile h2{
+        margin: 23px 0px 0 0px;
+    }
+    .container .description{
+        margin: 12px 0px 0px 31px;
+    }
+    .container .description div p{
+        font-size: 13px;
+        font-weight: 300px;
+        margin: 0;
+    }
+    .container .details{
+        width: 328px;
+        height: 68px;
+    }
+    .container .price{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container .price p{
+        margin-right: 27px;
+    }
+    .container .price div{
+        margin: 0;
+    }
+    .container .none{
+        display: none;
+    }
+    .container .line{
+       display: none;
+    }
+    .container .block{
+        
+        width: 128px;
+        height: 7px;
+        margin-right: -65px;
+        margin-top: -40px;
+    }
+    
+    
 }

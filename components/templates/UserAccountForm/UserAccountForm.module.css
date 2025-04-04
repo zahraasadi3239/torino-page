@@ -76,3 +76,56 @@ margin-right: 12px;
     margin-top: 20px;
     margin-left: 2px;
 }
+@media (max-width: 768px) {
+    .container{
+        width: 328px;
+        height: 169px;
+        margin: 183px -292px 0 31px;
+    }
+    .container div{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .first{
+        margin: 18px 20px 0px 122px ;
+    }
+    .container .second{
+margin: 0px;
+margin-top: 18px;
+    }
+    .container .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .container .editImage{
+        margin-left:10px ;
+        margin: 18px 20px 0px 12px 
+    }
+    .line{
+        display: none;
+    }
+    .container input{
+        width: 186px;
+        height: 40px;
+       margin: 5px;
+    }
+    .container form button{
+        width: 93px;
+        height: 40px;  
+        margin: 5px;
+       
+    }
+    .container .account{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container form{
+        margin: 0px 31px 0px 26px;
+    }
+    .container .mobile{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 12px 11px 21px;
+    }
+}

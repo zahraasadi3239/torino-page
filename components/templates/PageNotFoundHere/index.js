@@ -16,6 +16,7 @@ function PageNotFoutHere() {
           alt="pageNotFount"
           width={555}
           height={555}
+          className={styles.imageNotFound}
         />
       </div>
     </div>

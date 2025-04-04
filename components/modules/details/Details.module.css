@@ -10,6 +10,7 @@
 
 .title__fleetVehicle{
     display: flex;
+    align-items: center;
 }
   
   
@@ -127,3 +128,36 @@
     padding: 4px 8px;
     border-radius: 6px;
   }
+  @media(max-width:768px){
+    .container{
+        width: 327px;
+        height:202px;
+        margin: 0px 5px 20px 31px;
+    }
+    .line{
+      width: 325px;
+     left: 0;
+     top: 130px;
+  
+    }
+    .vehicle{
+      margin: 0;
+    }
+    .info{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   margin: 8px;
+    }
+    .price{
+      width: 100%;
+      margin-top: 40px;
+    }
+    .tourId{
+      width: 50%;
+    }
+    .tourPrice{
+      width: 50%;
+    }
+}

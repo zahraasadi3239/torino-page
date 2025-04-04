@@ -13,6 +13,11 @@
     display: flex;
     margin: 20px 20px 0px 0;
 }
+.travelerr h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
 .traveler form div{
    display: flex;
    flex-wrap: wrap;
@@ -20,8 +25,7 @@
  
 }
 .traveler form input{
-    width: 261px;
-    height: 51px;
+    
     border-radius: 5px;
     padding: 8px;
     border: 1px solid #00000080;
@@ -98,8 +102,13 @@
     position: relative;
     margin-bottom: 16px;
     display: flex;
-    /* gap: 12px; */
+    gap: 12px;
     flex-wrap: wrap;
+  }
+  .inputGroup select{
+    font-size: 16px;
+    font-weight:400;
+    color: #282828;
   }
   
   .input {
@@ -109,7 +118,7 @@
     border: 1px solid #00000080;
     border-radius: 6px;
     font-size: 14px;
-    margin: 14px 23.35px 24px 16px ;
+    margin: 14px 23.35px 0px 16px ;
   }
   
   .icon {
@@ -133,4 +142,34 @@
   
   .button:hover {
     background: #218838;
+  }
+  @media(max-width:768px){
+    .container{
+        width: 400px;
+        height: 679px;
+        display: flex;
+        flex-direction: column;
+        margin: 17px 32px 35px 31px;
+    }
+    .traveler{
+        width: 328px;
+        height:359px;
+    }
+    .inputGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .input{
+        
+        width:287px;
+        height: 50px;
+     
+     margin: 17px 20px 0 21px;
+    }
+    .details{
+        width: 328px;
+        height: 228px;
+        margin-top: 35px;
+    }
   }

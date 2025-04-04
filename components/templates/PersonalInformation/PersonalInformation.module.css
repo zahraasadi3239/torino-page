@@ -43,3 +43,38 @@
     color: #282828;
    margin: 6px 40px 24px 156px;
 }
+@media (max-width: 768px) {
+   .container{
+       width: 328px;
+       height: 251px;
+       margin: 23px 62px 0 31px;
+   }
+   .container div{
+      display: flex;
+      flex-direction: column;
+      
+   }
+   .container .row{
+      display: flex;
+      flex-direction: row;
+     }
+     .container .first{
+      /* margin: 24px 20px 0px 88px; */
+      margin: 14px 20px 0px 93px;
+     }
+     .container .second{
+     margin: 14px 0px 0px 36px;
+     }
+     .container .edit{
+      margin: -40px 207px 0px 17px;
+      /* margin: 8px 12px 0px 57px; */
+      display: flex;
+   
+     }
+     .container .edit a{
+      margin: -16px 20px 0px 0px;
+     }
+     .container h5{
+      margin: 12px;
+     }
+}

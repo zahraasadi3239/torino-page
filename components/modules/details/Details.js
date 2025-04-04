@@ -37,7 +37,7 @@ const DetailsPage = ({ tour }) => {
             </div>
 
             <p className={styles.vehicle}>
-              {fleetVehicleMap[tour.fleetVehicle]?.icon} سفر با{" "}
+              {fleetVehicleMap[tour.fleetVehicle]?.icon} سفر با
               {fleetVehicleMap[tour.fleetVehicle]?.name}
             </p>
           </div>

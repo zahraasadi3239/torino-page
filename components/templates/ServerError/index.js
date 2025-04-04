@@ -6,11 +6,12 @@ function ServerError() {
   return (
     <div className={styles.container}>
       <div className={styles.contex}>
-        <p>صفحه مورد نظر یافت نشد!</p>
-        <Link href="/">بازگشت به صفحه اصلی</Link>
+        <p className={styles.server}>اتصال با سرور برقرار نیست!!</p>
+        <p className={styles.tryagain}>لطفا بعدا دوباره امتحان کنید.</p>
       </div>
       <div>
         <Image
+        className={styles.imageServer}
           src="/images/Error Lamp Robot.png"
           alt="pageNotFount"
           width={555}

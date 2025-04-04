@@ -7,7 +7,7 @@ import Image from "next/image";
 function BankAccountInformation({ data }) {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.row}>
         <h5>اطلاعات حساب بانکی</h5>
         <div className={styles.edit}>
           <Image src="/images/edit.png" width={16} height={16} alt="edit" />
@@ -15,7 +15,7 @@ function BankAccountInformation({ data }) {
         </div>
       </div>
       <div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>شماره شبا</p>
           <p className={styles.second}>
             {data?.data?.payment?.shaba_code
@@ -23,7 +23,7 @@ function BankAccountInformation({ data }) {
               : "-"}
           </p>
         </div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>شماره کارت</p>
           <p className={styles.second}>
             {data?.data?.payment?.debitCard_code
@@ -32,7 +32,7 @@ function BankAccountInformation({ data }) {
           </p>
         </div>
       </div>
-      <div>
+      <div className={styles.row}>
         <p className={styles.first}>شماره حساب</p>
         <p className={styles.second}>
           {data?.data?.payment?.accountIdentifier

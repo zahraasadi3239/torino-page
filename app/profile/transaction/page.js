@@ -20,27 +20,57 @@ function TransactionPage() {
       </div>
     );
   return (
-    <div className={styles.container}>
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>تاریخ و ساعت</th>
-            <th>مبلغ(تومان)</th>
-            <th>نوع تراکنش</th>
-            <th>شماره سفارش</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data?.data?.map((transaction) => (
-            <tr key={transaction.id}>
-              <td>{formatJalaliDate(transaction.createdAt)}</td>
-              <td>{sp(transaction.amount).toLocaleString("fa-IR")}</td>
-              <td>{getTransactionType(transaction.type)}</td>
-              <td>{formatOrderId(transaction.userId)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    // <div className={styles.container}>
+    //   <table className={styles.table}>
+    //     <thead>
+    //       <tr>
+    //         <th>تاریخ و ساعت</th>
+    //         <th>مبلغ(تومان)</th>
+    //         <th>نوع تراکنش</th>
+    //         <th>شماره سفارش</th>
+    //       </tr>
+    //     </thead>
+    //     <tbody>
+    //       {data?.data?.map((transaction) => (
+    //         <tr key={transaction.id}>
+    //           <td>{formatJalaliDate(transaction.createdAt)}</td>
+    //           <td>{sp(transaction.amount).toLocaleString("fa-IR")}</td>
+    //           <td>{getTransactionType(transaction.type)}</td>
+    //           <td>{formatOrderId(transaction.userId)}</td>
+    //         </tr>
+    //       ))}
+    //     </tbody>
+    //   </table>
+    // </div>
+    <div className={styles.pageContainer}>
+      {" "}
+      {/* کلاس page-container در اینجا */}
+      <div className={styles.mainContent}>
+        {" "}
+        {/* کلاس main-content در اینجا */}
+        <div className={styles.container}>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>تاریخ و ساعت</th>
+                <th>مبلغ (تومان)</th>
+                <th>نوع تراکنش</th>
+                <th>شماره سفارش</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data?.data?.map((transaction) => (
+                <tr key={transaction.id}>
+                  <td>{formatJalaliDate(transaction.createdAt)}</td>
+                  <td>{sp(transaction.amount).toLocaleString("fa-IR")}</td>
+                  <td>{getTransactionType(transaction.type)}</td>
+                  <td>{formatOrderId(transaction.userId)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }

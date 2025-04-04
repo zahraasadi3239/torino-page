@@ -1,3 +1,10 @@
 .container{
     margin:-150px 322px;
 }
+@media(max-width:768px){
+    .container{
+        width: 400px;
+        height: fit-content;
+      
+    }
+}

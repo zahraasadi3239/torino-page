@@ -10,20 +10,20 @@ function UserAccountInformation({ data }) {
     <div className={styles.container}>
       <h5>اطلاعات حساب کاربری</h5>
       <div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>شماره موبایل</p>
           <p className={styles.second}>
             {data?.data.mobile ? data?.data.mobile : "-"}
           </p>
         </div>
-        <div>
+        <div className={styles.row}>
           <p className={styles.first}>ایمیل</p>
           <p className={styles.second}>
             {data?.data?.email ? data?.data?.email : "-"}
           </p>
         </div>
-        <div onClick={editHandler}>
-          <Image src="/images/edit.png" width={16} height={16} alt="edit" />
+        <div onClick={editHandler} className={styles.row}>
+          <Image src="/images/edit.png" width={16} height={16} alt="edit" className={styles.editImage}/>
           <Link href="/profile/EditProfile" className={styles.edit}>
             افزودن
           </Link>

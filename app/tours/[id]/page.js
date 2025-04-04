@@ -35,16 +35,25 @@ async function TourDetailsPage({ params }) {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <Image src={image} width={397} height={265} alt="tour" />
+        <Image
+          src={image}
+          width={397}
+          height={265}
+          alt="tour"
+          className={styles.rowImage}
+        />
 
         <div className={styles.rowLeft}>
-          <h2>{title}</h2>
+          <div className={styles.rowmobile}>
+            <h2>{title}</h2>
 
-          <div>
-            <p className={styles.duration}>
-              {calculateTourDetails(startDate, endDate)}روزه
-            </p>
+            <div>
+              <p className={styles.duration}>
+                {calculateTourDetails(startDate, endDate)}روزه
+              </p>
+            </div>
           </div>
+
           <div className={styles.description}>
             <div>
               <Image
@@ -80,7 +89,7 @@ async function TourDetailsPage({ params }) {
         </div>
       </div>
       <div className={styles.details}>
-        <div className={styles.box}>
+      <div className={styles.none}><div className={styles.box}>
           <div className={styles.details2}>
             <Image src="/images/map.png" width={20} height={20} alt="details" />
             <p>مبدا</p>
@@ -128,6 +137,8 @@ async function TourDetailsPage({ params }) {
           </p>
         </div>
         <div className={styles.line}></div>
+       </div>
+        <div className={styles.block}></div>
         <div className={styles.box}>
           <div className={styles.details2}>
             <Image src="/images/bus.png" width={20} height={20} alt="details" />

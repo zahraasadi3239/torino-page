@@ -8,7 +8,7 @@
   overflow-y: hidden;
   }
   .contex p{
-      font-family:'YekanBakhRegular';
+
       font-size:36px;
       font-weight:600;
       color:#282828;
@@ -20,8 +20,29 @@
       height:75px;
       padding: 16px 45px;
       color: #28A745;
-      font-family:'YekanBakhRegular';
+    text-align: center;
       font-size:26px;
       font-weight:600;
       margin-top: 81px;
+      border-radius: 16px;
+  }
+  @media(max-width:768px){
+    .container{
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 45px 34px 168px 34px;
+    }
+    .imageNotFound{
+        width: 322px;
+        height: 322px;
+    }
+    .contex p{
+        font-size: 24px;
+        text-align: center;
+    }
+    .contex a{
+        font-size: 20px;
+    }
   }

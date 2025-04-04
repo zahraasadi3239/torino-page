@@ -6,7 +6,7 @@ import { useCheckout } from "@/core/services/mutations";
 import React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useGetBasket } from "@/core/services/queries";
+import { useGetBasket, useGetUserData } from "@/core/services/queries";
 import styles from "./CheckOutPage.module.css";
 import Image from "next/image";
 import { PersonalAccountSchema } from "@/core/schema";
@@ -17,6 +17,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 function CheckOutPage() {
   const { data, isPending } = useGetBasket();
+
   const { mutate } = useCheckout();
   const router = useRouter();
   const {

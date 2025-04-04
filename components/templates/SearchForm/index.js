@@ -13,7 +13,7 @@ import { DateToISO, flattenObject } from "@/core/utils/helper";
 import Image from "next/image";
 import styles from "./SearchForm.module.css";
 function SearchForm() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenDate, setIsOpenDate] = useState(false);
 
   const router = useRouter();
   const { getQuery } = useQuery();
@@ -100,22 +100,21 @@ function SearchForm() {
         <div className={styles.line}></div>
 
         <div className={styles.data}>
-          <div className={styles.dateWrapper} onClick={() => setIsOpen(true)}>
+          <div
+            className={styles.dateWrapper}
+            onClick={() => setIsOpenDate(true)}
+          >
             <Image
               src="/images/calendar.png"
               width={20}
               height={20}
               alt="global"
             />
-            <span className={styles.dateText}>
-              {selectedDate.startDate
-                ? `از ${selectedDate.startDate} تا ${selectedDate.endDate}`
-                : "تاریخ"}
-            </span>
+            <span className={styles.dateText}>تاریخ </span>
           </div>
 
           {/* تقویم که هنگام کلیک باز می‌شود */}
-          {isOpen && (
+          {isOpenDate && (
             <div className={styles.datePickerContainer}>
               <Controller
                 name="date"
@@ -154,3 +153,161 @@ function SearchForm() {
 }
 
 export default SearchForm;
+// "use client";
+// import { useForm, Controller } from "react-hook-form";
+// import { DatePicker } from "zaman";
+
+// import { useGetTours } from "@/core/services/queries";
+// import QueryString from "qs";
+// import { useRouter } from "next/navigation";
+// import useQuery from "@/core/hooks/query";
+// import { DateToISO, flattenObject } from "@/core/utils/helper";
+
+// import styles from "./SearchForm.module.css";
+// import Image from "next/image";
+// import { useState } from "react";
+
+// // import "zaman/dist/zaman.css"; // اضافه کردن استایل زمان
+// const { getQuery } = useQuery();
+
+// const { register, handleSubmit, control, watch, reset } = useForm({
+//   defaultValues: {
+//     date: { startDate: null, endDate: null },
+//   },
+// });
+// function SearchForm() {
+//   const [originMenuOpen, setOriginMenuOpen] = useState(false);
+//   const [destinationMenuOpen, setDestinationMenuOpen] = useState(false);
+//   const [dateMenuOpen, setDateMenuOpen] = useState(false);
+
+//   // مقادیر انتخابی
+//   const [selectedOrigin, setSelectedOrigin] = useState("");
+//   const [selectedDestination, setSelectedDestination] = useState("");
+//   const [selectedDate, setSelectedDate] = useState({
+//     startDate: null,
+//     endDate: null,
+//   });
+
+//   // داده‌های پیش‌فرض
+//   const origins = ["تهران", "سنندج", "تبریز", "شیراز"];
+//   const destinations = ["تهران", "سنندج", "تبریز", "شیراز"];
+//   const toggleOriginMenu = () => {
+//     setOriginMenuOpen((prev) => !prev);
+//     setDestinationMenuOpen(false);
+//     setDateMenuOpen(false);
+//   };
+
+//   const toggleDestinationMenu = () => {
+//     setDestinationMenuOpen((prev) => !prev);
+//     setOriginMenuOpen(false);
+//     setDateMenuOpen(false);
+//   };
+
+//   const toggleDateMenu = () => {
+//     setDateMenuOpen((prev) => !prev);
+//     setOriginMenuOpen(false);
+//     setDestinationMenuOpen(false);
+//   };
+
+//   // انتخاب مبدا و مقصد
+//   const handleOriginSelect = (value) => {
+//     setSelectedOrigin(value);
+//     setOriginMenuOpen(false);
+//   };
+
+//   const handleDestinationSelect = (value) => {
+//     setSelectedDestination(value);
+//     setDestinationMenuOpen(false);
+//   };
+//   const handleDateSelect = (value) => {
+//     setSelectedDate({
+//       startDate: value.from ? value.from.toISOString().split("T")[0] : null,
+//       endDate: value.to ? value.to.toISOString().split("T")[0] : null,
+//     });
+//     setDateMenuOpen(false); // بستن منوی تاریخ بعد از انتخاب
+//   };
+//   const submitHandler = (data) => {
+//     // setQuery(flattenObject(data));
+//     const query = QueryString.stringify(flattenObject(data));
+//     router.push(`/?${query}`);
+//   };
+//   return (
+//     <div className={styles.container}>
+//       <form onSubmit={handleSubmit(submitHandler)}></form>
+//       <div className={styles.location}>
+//         <button onClick={toggleOriginMenu}>
+//           <Image
+//             src="/images/location.png"
+//             width={20}
+//             height={20}
+//             alt="location"
+//           />
+//           {selectedOrigin || "انتخاب مبدا"}
+//         </button>
+//         {originMenuOpen && (
+//           <ul>
+//             {origins.map((origin, index) => (
+//               <li key={index} onClick={() => handleOriginSelect(origin)}>
+//                 {origin}
+//               </li>
+//             ))}
+//           </ul>
+//         )}
+//       </div>
+
+//       <div className={styles.global}>
+//         <button onClick={toggleDestinationMenu}>
+//           <Image
+//             src="/images/global-search.png"
+//             width={20}
+//             height={20}
+//             alt="global"
+//           />
+//           {selectedDestination || "انتخاب مقصد"}
+//         </button>
+//         {destinationMenuOpen && (
+//           <ul>
+//             {destinations.map((destination, index) => (
+//               <li
+//                 key={index}
+//                 onClick={() => handleDestinationSelect(destination)}
+//               >
+//                 {destination}
+//               </li>
+//             ))}
+//           </ul>
+//         )}
+//       </div>
+
+//       <div className={styles.data}>
+//         <button onClick={toggleDateMenu}>
+//           <Image
+//             src="/images/calendar.png"
+//             width={20}
+//             height={20}
+//             alt="global"
+//           />
+//           {selectedDate.startDate && selectedDate.endDate
+//             ? `از ${selectedDate.startDate} تا ${selectedDate.endDate}`
+//             : "انتخاب تاریخ"}
+//         </button>
+
+//         {dateMenuOpen && (
+//           <div>
+//             <DatePicker
+//               range
+//               inline
+//               round="x2"
+//               hideInput
+//               onChange={handleDateSelect}
+//               accentColor="#28A745"
+//               calendarPosition="bottom-right"
+//             />
+//           </div>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default SearchForm;

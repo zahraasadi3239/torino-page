@@ -69,3 +69,66 @@
     margin-left: 2px;
     margin-right: 5px;
 }
+@media (max-width: 768px) {
+    .container{
+        width: 328px;
+        height: 294px;
+        margin: 23px -292px 0 31px;
+    }
+    .container input{
+        margin: 0px;
+        padding: 0px;
+    }
+   
+    .container .row{
+     display: flex;
+     flex-direction: row;
+    }
+    .container .first{
+     margin: 24px 20px 0px 88px;
+    }
+    .container .second{
+     margin: 24px 0px 0px 21px;
+    }
+    .container .edit{
+     margin: 8px 12px 0px 57px;
+     display: flex;
+  
+    }
+    .container .edit a{
+     margin: -16px 24px 0px 0px;
+    }
+    .container h5{
+     margin: 12px;
+    }
+    .container form .line{
+        border: none;
+    }
+    .container form button{
+        width: 138.72px;
+        height: 41px;
+        margin: 0;   
+     }
+    .container input{
+        width: 289px;
+        height: 40px;
+        margin: 14px 20px 0px 19px;
+    }
+    
+    .container .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        width: 100%;
+        height: 41px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 18px 2px 16px 21px;
+    }
+    .container .button .cansel{
+    margin-right: -20px;
+    }
+ }
