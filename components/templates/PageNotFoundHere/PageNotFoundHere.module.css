@@ -1,0 +1,48 @@
+.container{
+    max-width: 1440px;
+  /* height: 1138px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 43px 174px 174px 82px;
+  overflow-y: hidden;
+  }
+  .contex p{
+
+      font-size:36px;
+      font-weight:600;
+      color:#282828;
+  }
+  .contex a{
+      background-color: #D8FFE1;
+      display: inline-block;
+      width:361px;
+      height:75px;
+      padding: 16px 45px;
+      color: #28A745;
+    text-align: center;
+      font-size:26px;
+      font-weight:600;
+      margin-top: 81px;
+      border-radius: 16px;
+  }
+  @media(max-width:768px){
+    .container{
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 45px 34px 168px 34px;
+    }
+    .imageNotFound{
+        width: 322px;
+        height: 322px;
+    }
+    .contex p{
+        font-size: 24px;
+        text-align: center;
+    }
+    .contex a{
+        font-size: 20px;
+    }
+  }

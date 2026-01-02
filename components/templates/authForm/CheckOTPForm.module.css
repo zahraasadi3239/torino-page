@@ -1,0 +1,71 @@
+.container{ 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.title{
+    font-weight: 600;
+    font-size: 28px;
+    color: #282828;
+    text-align: center;
+    margin-top: 59px;
+
+}
+.imageLeft{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.container p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #282828;
+    margin-top: 8px;
+}
+.container.otpForm{
+    display: inline-block;
+    direction: ltr;
+    margin-top: 18px;
+}
+.container .login{
+    width: 400px;
+    height: 54px;
+    color: #ffffff;
+    background-color: #28A745;
+    font-weight:500;
+    font-size:18px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 7px; 
+}
+.container .resetTimer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 16px  auto;
+}
+.resend{
+    margin: 16px 129px 17px 128px;
+    border: none;
+    background-color: inherit;
+}
+@media(max-width:768px){
+    .container input{
+       width: 278px;
+       height: 54px;
+    }
+    .container label{
+       margin: 45px 40px 10px;
+    }
+    .container .login{
+        width:278px;
+        height:54px;
+    }
+    .container .otpForm{
+        width:25px;
+        height: 25px;
+      margin: 21px 10px 24px 10px ;
+     
+    }
+}
