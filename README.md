@@ -1,128 +1,128 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Torino Tours — Travel Booking Web Application
 
-## Getting Started
+Torino Tours is a responsive travel booking front-end application built with **Next.js and React**. It provides a user interface for exploring tours, managing user profiles, making reservations, and viewing booking and transaction information.
 
-First, run the development server:
+The project demonstrates modern front-end development practices, reusable UI patterns, form validation, API communication, and client-side interactions.
+
+## 🔗 Project Links
+
+- **GitHub Repository:** https://github.com/zahraasadi3239/torino-page
+- **Live Demo:** Add your deployed project URL here, if available.
+
+## ✨ Features
+
+### 🔐 Authentication and User Profile
+
+- **OTP Authentication:** User login interface based on one-time password verification.
+- **Protected Routes:** Restricts access to designated pages based on authentication status.
+- **Profile Setup:** Allows users to complete their profile information.
+- **Profile Management:** Supports editing and updating profile details.
+
+### 🧳 Tour Booking
+
+- **Tour Search:** Search for tours using origin, destination, and travel date ranges.
+- **Tour Reservations:** Allows authenticated users to reserve tours with available capacity.
+- **Cart Interaction:** Adds selected tours to the cart as part of the reservation flow.
+- **My Tours:** Displays previously booked tours and their statuses.
+- **Transaction History:** Presents transaction information organized by date and time.
+
+### 🖥️ User Experience
+
+- Responsive layouts for different screen sizes
+- Form validation and user feedback
+- Loading indicators during supported asynchronous operations
+- Toast notifications for application feedback
+- Jalali calendar and Persian date formatting support
+
+## 🛠️ Technologies Used
+
+- **Next.js 13.5** — React framework using the App Router
+- **React 18** — UI development
+- **JavaScript** — Application logic
+- **CSS / SCSS** — Styling and layout
+
+## 📚 Libraries and Tools
+
+| Library | Purpose |
+|---|---|
+| React Query | Server-state management and data fetching |
+| Axios | HTTP requests and API communication |
+| React Hook Form | Form state management |
+| React18 Input OTP | OTP input interface |
+| Zaman | Jalali calendar and date-picker functionality |
+| Jalaali-js | Jalali date conversion |
+| Yup | Form validation |
+| React Toastify | Toast notifications |
+| React Loader Spinner | Loading indicators |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm
+- Access to the required backend service for features that depend on it
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/zahraasadi3239/torino-page.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd torino-page
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Important:** This repository contains the front-end application. Features that require authentication, tour data, reservations, or transaction information may depend on a separately configured backend service. Configure the required API settings according to the project's existing configuration before testing those features.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🏗️ Project Highlights
 
-## Learn More
+This project demonstrates practical experience with:
 
-To learn more about Next.js, take a look at the following resources:
+- Developing a multi-page application using Next.js App Router
+- Organizing UI components and application routes
+- Managing server state and communicating with APIs
+- Handling forms and validating user input
+- Implementing authentication-related user flows
+- Working with Persian dates and Jalali calendar functionality
+- Building interfaces for a travel booking workflow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔮 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Potential improvements include:
 
-## Deploy on Vercel
+- Expanding automated test coverage
+- Improving accessibility and keyboard navigation
+- Enhancing loading, error, and empty states
+- Further optimizing performance and responsive behavior
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👩‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-/////
-Torino Tours – Travel Booking Web Application
+**Zahra Asadi**
 
-Torino Tours is a front-end web application developed using React and Next.js, focused on providing a smooth and user-friendly experience for booking travel tours. The project is built with attention to clean design, responsive layouts, and secure user interactions across different devices.
+Junior Front-End Developer focused on building responsive, user-friendly web applications with JavaScript, React, and Next.js.
 
-This application demonstrates practical usage of modern Next.js features, including structured routing, optimized data fetching, and client-side state management. Emphasis has been placed on authentication flow, form validation, and creating an intuitive interface suitable for real-world usage.
+- **GitHub:** https://github.com/zahraasadi3239
+- **Email:** zahra6052a@gmail.com
 
-Features Overview
+## 📄 License
 
-OTP Authentication
-Users can log in securely using a one-time password mechanism.
-
-User Authorization
-Only authenticated users can access protected parts of the application.
-
-User Profile Setup
-After registration, users can complete their personal profile information.
-
-Profile Management
-Users are able to edit and update their profile details when needed.
-
-Tour Reservation
-Logged-in users can reserve available tours that have remaining capacity and add them to their cart.
-
-Tour Search Functionality
-Fast and efficient search based on origin, destination, and return date range.
-
-My Tours Section
-Displays a list of tours previously booked by the user along with their status.
-
-Transaction History
-Shows detailed information about user payments, categorized by date and time.
-
-Installation & Setup
-
-To run the project locally, follow these steps:
-
-⚠️ Note:
-This repository contains only the front-end of the application. The back-end service must be set up and run separately.
-
-Clone the repository:
-
-git clone https://github.com/zahraasadi3239/torino-app.git
-
-
-Navigate to the project directory:
-
-cd torino-app
-
-
-Install dependencies:
-
-npm install
-
-
-Run the development server:
-
-npm run dev
-
-Technologies Used
-
-Next.js (v13.5 – App Router)
-
-React
-
-JavaScript
-
-CSS / SCSS
-
-Libraries & Tools
-Library	Description
-React Query	Server state management and data fetching
-Axios	HTTP request handling
-React Hook Form	Efficient form handling
-React18 Input OTP	OTP input implementation
-Zaman	Jalali calendar and customized date picker
-Jalaali-js	Converting UTC dates to Jalali format
-Yup	Form data validation
-React Toastify	User notifications
-React Loader Spinner	Loading indicators
-License
-
-This project is licensed under the MIT License.
-See the LICENSE file for more information.
-
-Contact
-
-For any questions or feedback, feel free to reach out:
-
-GitHub: https://github.com/zahraasadi3239
-
-Email: zahra6052a@gmail.com
+This project is licensed under the MIT License, provided the repository includes the corresponding `LICENSE` file.
